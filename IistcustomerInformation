@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+
+public class IistcustomerInformation {
+    // Hederlige Harrys Bilar:
+    // En bra bilaffär
+    // (för Harry)
+    // 5000
+    // Farmor Ankas Pajer AB
+    // Skynda innan
+    // Mårten äter allt!
+    // 2000
+    // Svarte Petters Svartbyggen
+    // Bygga svart? 
+    // Ring Petter
+    // 1500
+    // Långbens detektivbyrå
+    // Mysterier? Ring Långben
+    // 4000
+    
+    
+    public static void main(String[] args) {
+        ArrayList<Message> listcustomers = new ArrayList<>();
+        Message hederlige= new Message();
+        hederlige.setCustomer("Hederlige Harrys Bilar");
+        hederlige.setMessages("En bra bilaffär(för Harry)");
+        hederlige.setPayment(5000);
+        listcustomers.add(hederlige);
+
+        Message Farmor= new Message();
+        Farmor.setCustomer("Farmor Ankas Pajer AB");
+        Farmor.setMessages("Skynda innan Mårten äter allt!)");
+        Farmor.setPayment(2000);
+        listcustomers.add(Farmor);
+
+        Message Svarte= new Message();
+        Svarte.setCustomer("Svarte Petters Svartbyggen");
+        Svarte.setMessages("Bygga svart? Ring Petter");
+        Svarte.setPayment(1500);
+        listcustomers.add(Svarte);
+
+        Message Långbens= new Message();
+        Långbens.setCustomer("Långbens detektivbyrå");
+        Långbens.setMessages("Mysterier? Ring Långben");
+        Långbens.setPayment(4000);
+        listcustomers.add(Långbens);
+
+        for (Message information : listcustomers ){
+            System.out.println(information.getCustomer() + " " + information.getMessages() +" " + information.getPayment());
+        }
+
+
+       
+    }
